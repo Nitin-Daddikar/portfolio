@@ -3,6 +3,29 @@
     "use strict"
 
 
+    $('#myName').typeIt({
+        strings: ['Nitin Daddikar'],
+        speed: 100,
+        autoStart: false,
+        breakLines: false,
+        waitUntilVisible: true,
+        loop: false
+    });
+
+    $('.light').click(function(e) {
+        var win = window.open($(this).attr("href"), '_blank');
+        if (win) {
+            //Browser has allowed it to be opened
+            win.focus();
+        } else {
+            //Browser has blocked it
+            alert('Please allow popups for this website to view the projects');
+        }
+        e.preventDefault();
+    });
+
+
+
     var nav_offset_top = $('header').height() + 50;
     /*-------------------------------------------------------------------------------
 	  Navbar 
@@ -109,7 +132,8 @@
     /*----------------------------------------------------*/
     /*  Simple LightBox js
     /*----------------------------------------------------*/
-    $('.imageGallery1 .light').simpleLightbox();
+
+    //$('.imageGallery1 .light').simpleLightbox();
 
     $('.counter').counterUp({
         delay: 10,

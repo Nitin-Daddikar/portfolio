@@ -412,6 +412,14 @@ button:focus {
     right: 20px;
 }
 
+.downloadCV {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
 
 /*---------------------------------------------------- */
 
