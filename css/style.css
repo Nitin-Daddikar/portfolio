@@ -3922,7 +3922,8 @@ h6 {
     margin-bottom: 0px;
 }
 
-.h_gallery_item:hover .g_img_item:before {
+
+/* .h_gallery_item:hover .g_img_item:before {
     opacity: .85;
 }
 
@@ -3932,7 +3933,7 @@ h6 {
 
 .h_gallery_item:hover .g_item_text h4:hover {
     color: #766dff;
-}
+} */
 
 .more_btn {
     text-align: center;
